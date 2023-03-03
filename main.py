@@ -6,9 +6,7 @@ from web3 import Web3
 from mnemonic import Mnemonic
 from moralis import evm_api
 
-moralis_key = "GFe9A3lNYWFSv1jO5NmC14bUHeW4oedryp1BPUHxAnAMZUL7C3Nd0Ppjaru3003R"
-Api_key = "5964876840:AAHe5gbeYg9e1BtPIX2WJauspGbwWd1i1Ao"
-infura = "https://mainnet.infura.io/v3/c1f653384020470d942fdd4d8eb97795"
+infura = process.env(Api_Key)
 w3 = Web3(Web3.HTTPProvider(infura))
 
 bot = telebot.TeleBot(Api_key)
